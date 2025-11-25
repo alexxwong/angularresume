@@ -1,0 +1,91 @@
+.profile-wrapper {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--card-bg);
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.2);
+  transition: transform 0.5s ease;
+  animation: pulseGlow 3s infinite;
+}
+
+img:hover {
+  transform: scale(1.05) rotate(3deg);
+  cursor: pointer;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(6, 182, 212, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+}
+
+.social-links {
+  margin-bottom: 25px;
+}
+
+.github-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.github-pill:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+
+.section-text {
+  color: var(--text-main);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+}
+
+.cta-container {
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 14px 35px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 10px rgba(6, 182, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.25);
+}
